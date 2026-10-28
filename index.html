@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="Saleem Adebayo">
+<meta property="og:description" content="Data scientist and machine learning engineer in London. Turning data-driven objectives into AI features and solutions that go live.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2314171a'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='%23f2f3ef' text-anchor='middle'%3ESA%3C/text%3E%3C/svg%3E">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Saleem Adebayo</title>
+<meta name="description" content="Saleem Adebayo, data scientist and machine learning engineer in London.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+/* Layout: a person filed like a registered model. Value statement beside a model card,
+   a strip of who I've worked with, four one-line case files, then the plain record. */
+:root {
+  --bg: #f2f3ef;
+  --surface: #fbfbf8;
+  --ink: #14171a;
+  --muted: #5a6168;
+  --rule: #d3d7d1;
+  --accent: #0d6a59;
+  --accent-soft: #dcebe6;
+  --display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  --body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --step--1: 0.8125rem;
+  --step-0: 1rem;
+  --step-1: 1.25rem;
+  --step-2: 1.75rem;
+  --step-hero: clamp(3rem, 9vw, 6.5rem);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101315; --surface: #171b1e; --ink: #e8ebe8; --muted: #9aa3a6;
+    --rule: #2a3033; --accent: #5ccbb2; --accent-soft: #173029; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101315; --surface: #171b1e; --ink: #e8ebe8; --muted: #9aa3a6;
+  --rule: #2a3033; --accent: #5ccbb2; --accent-soft: #173029; color-scheme: dark;
+}
+
+/* Colourways: green is the default above. Mustard is a white page in every theme, so its
+   selector outranks the dark blocks. Mono is black on white, or white on black in dark mode;
+   its dark variants carry one more selector so they beat its light values. */
+html:root[data-palette="mustard"] {
+  --bg: #ffffff; --surface: #fffcf2; --ink: #17150f; --muted: #625b49;
+  --rule: #e8e0c8; --accent: #7d5d00; --accent-soft: #f8e4a0; color-scheme: light;
+}
+:root[data-palette="mono"] {
+  --bg: #ffffff; --surface: #ffffff; --ink: #000000; --muted: #555555;
+  --rule: #d9d9d9; --accent: #000000; --accent-soft: #ebebeb;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-palette="mono"]:not([data-theme="light"]) {
+    --bg: #000000; --surface: #0b0b0b; --ink: #ffffff; --muted: #a8a8a8;
+    --rule: #2e2e2e; --accent: #ffffff; --accent-soft: #262626;
+  }
+}
+:root[data-theme="dark"][data-palette="mono"] {
+  --bg: #000000; --surface: #0b0b0b; --ink: #ffffff; --muted: #a8a8a8;
+  --rule: #2e2e2e; --accent: #ffffff; --accent-soft: #262626;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--body); font-size: var(--step-0); line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap {
+  max-width: 1120px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+a { color: inherit; text-decoration-color: var(--rule); text-underline-offset: 3px; }
+a:hover { text-decoration-color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; }
+p { margin: 0; }
+.label {
+  font-family: var(--mono); font-size: var(--step--1); letter-spacing: 0.04em;
+  text-transform: uppercase; color: var(--muted);
+}
+
+/* top bar */
+.top { border-bottom: 1px solid var(--rule); }
+.top .wrap {
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px;
+  padding-block: 14px; font-family: var(--mono); font-size: var(--step--1); color: var(--muted);
+}
+.top nav { display: flex; flex-wrap: wrap; gap: 6px 20px; }
+.top nav a { text-decoration: none; }
+.top nav a:hover { color: var(--ink); }
+.top .right { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
+.swatches { display: flex; align-items: center; gap: 8px; }
+.swatches button {
+  width: 18px; height: 18px; padding: 0; border-radius: 50%;
+  border: 1px solid var(--rule); background: var(--sw); cursor: pointer;
+}
+.swatches button[aria-pressed="true"] { box-shadow: 0 0 0 2px var(--bg), 0 0 0 3px var(--ink); }
+.swatches button[data-palette="green"] { --sw: #0d6a59; }
+.swatches button[data-palette="mustard"] { --sw: #d4a017; }
+.swatches button[data-palette="mono"] { --sw: linear-gradient(135deg, #000 50%, #fff 50%); }
+
+/* hero */
+.hero .wrap {
+  display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 48px; align-items: end; padding-block: 72px 56px;
+}
+.hero h1 {
+  font-size: var(--step-hero); font-weight: 800; line-height: 0.92;
+  letter-spacing: -0.035em; font-variation-settings: "opsz" 96;
+}
+.hero .role { font-family: var(--mono); font-size: var(--step--1); color: var(--accent); margin-bottom: 20px; }
+.hero .intro { font-size: var(--step-1); line-height: 1.45; max-width: 30ch; margin-top: 28px; font-weight: 500; }
+.hero .sub { color: var(--muted); max-width: 46ch; margin-top: 12px; }
+.hero .avail {
+  display: inline-flex; align-items: center; gap: 10px; margin-top: 24px;
+  font-size: var(--step--1); color: var(--muted);
+}
+.hero .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.dot {
+  flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+}
+
+/* model card */
+.card {
+  background: var(--surface); border: 1px solid var(--rule); border-radius: 6px;
+  font-family: var(--mono); font-size: var(--step--1); min-width: 0;
+}
+.card header {
+  display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+  padding: 14px 18px; border-bottom: 1px solid var(--rule);
+}
+.card header strong { font-weight: 500; }
+.stage { color: var(--accent); background: var(--accent-soft); padding: 1px 8px; border-radius: 3px; }
+.card dl { margin: 0; padding: 6px 18px 12px; }
+.card .row {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px;
+  padding: 9px 0; border-bottom: 1px dashed var(--rule);
+}
+.card .row:last-child { border-bottom: 0; }
+.card dt { color: var(--muted); }
+.card dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; font-weight: 500; }
+.card footer { padding: 12px 18px; border-top: 1px solid var(--rule); color: var(--muted); }
+
+/* worked with */
+.clients { border-top: 1px solid var(--rule); }
+.clients .wrap {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 32px; padding-block: 22px;
+}
+.clients ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 32px; }
+.clients li { font-family: var(--display); font-weight: 700; font-size: var(--step-1); letter-spacing: -0.01em; color: var(--muted); }
+
+/* sections */
+section { border-top: 1px solid var(--rule); }
+section > .wrap { padding-block: 64px; }
+.section-head {
+  display: flex; justify-content: space-between; align-items: baseline;
+  gap: 12px; flex-wrap: wrap; margin-bottom: 32px;
+}
+.section-head h2 { font-size: var(--step-2); font-weight: 700; letter-spacing: -0.02em; }
+
+/* case files */
+.cases { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 48px; }
+.case { display: grid; gap: 10px; align-content: start; padding-block: 28px; border-top: 1px solid var(--rule); }
+.case:nth-child(-n+2) { border-top: 0; padding-top: 0; }
+.case .meta { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.case h3 { font-size: var(--step-1); font-weight: 700; letter-spacing: -0.01em; }
+.case .where { font-weight: 600; }
+.case p { max-width: 58ch; }
+.result {
+  justify-self: start; font-family: var(--mono); font-size: var(--step--1);
+  color: var(--accent); background: var(--accent-soft); border-radius: 3px; padding: 2px 8px;
+}
+
+/* side projects */
+.builds { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+.build { display: grid; gap: 4px; align-content: start; }
+.build h3 { font-size: var(--step-0); font-weight: 700; }
+.build p { color: var(--muted); font-size: 0.9375rem; }
+
+/* record */
+.record { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 48px; }
+.record h3 { font-size: var(--step--1); font-family: var(--mono); font-weight: 500; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 14px; }
+.record ol, .record ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.record li { display: grid; gap: 2px; }
+.record .t { font-weight: 600; }
+.record .s { color: var(--muted); font-size: 0.9375rem; }
+.record .d { font-family: var(--mono); font-size: 0.75rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.record .later { margin-top: 32px; }
+
+/* contact */
+.contact .wrap { display: grid; gap: 24px; }
+.contact h2 { font-size: clamp(2rem, 5vw, 3.25rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1; max-width: 20ch; }
+.contact-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.email {
+  font-family: var(--mono); font-size: var(--step-0); user-select: all;
+  background: var(--surface); border: 1px solid var(--rule); border-radius: 4px; padding: 8px 12px;
+}
+button, .btn {
+  font: 500 var(--step--1)/1 var(--mono); color: var(--bg); background: var(--ink);
+  border: 1px solid var(--ink); border-radius: 4px; padding: 10px 14px; cursor: pointer; text-decoration: none;
+}
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--rule); }
+.btn.ghost:hover { border-color: var(--ink); }
+.fine { font-family: var(--mono); font-size: 0.75rem; color: var(--muted); padding-block: 24px 40px; }
+
+@media (max-width: 860px) {
+  .hero .wrap { grid-template-columns: minmax(0, 1fr); padding-block: 48px; gap: 36px; }
+  .cases, .record { grid-template-columns: minmax(0, 1fr); }
+  .case:nth-child(2) { border-top: 1px solid var(--rule); padding-top: 28px; }
+  .builds { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .record { gap: 36px; }
+  section > .wrap { padding-block: 48px; }
+}
+@media (max-width: 480px) { .builds { grid-template-columns: minmax(0, 1fr); } }
+@media (prefers-reduced-motion: no-preference) {
+  .dot { animation: pulse 2.4s ease-in-out infinite; }
+  @keyframes pulse { 50% { box-shadow: 0 0 0 7px var(--accent-soft); } }
+}</style>
+</head>
+<body>
+<div class="top">
+  <div class="wrap">
+    <span>Saleem Adebayo · London</span>
+    <div class="right">
+      <nav aria-label="Sections">
+        <a href="#work">Work</a>
+        <a href="#record">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="swatches" role="group" aria-label="Colourway">
+        <button type="button" id="sw-green" data-palette="green" aria-label="Green" aria-pressed="true"></button>
+        <button type="button" id="sw-mustard" data-palette="mustard" aria-label="Mustard on white" aria-pressed="false"></button>
+        <button type="button" id="sw-mono" data-palette="mono" aria-label="Black and white" aria-pressed="false"></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <p class="role">Data scientist · Machine learning engineer</p>
+      <h1>Saleem<br>Adebayo</h1>
+      <p class="intro">I turn data-driven objectives into AI features and solutions that go live, with results businesses can measure.</p>
+      <p class="sub">Four years across credit, payments, retail and LLM products, from first analysis to deployed models on AWS, Azure and Google Cloud.</p>
+      <p class="avail"><span class="dot" aria-hidden="true"></span>Open to Data Scientist, ML Engineer and AI Engineer roles in London from January 2027</p>
+      <div class="actions">
+        <a class="btn" href="#work">See the work</a>
+        <a class="btn ghost" href="https://linkedin.com/in/saleem-adebayo" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+
+    <article class="card" aria-label="Summary in numbers">
+      <header>
+        <strong>registered_model: saleem-adebayo</strong>
+        <span class="stage">stage: production</span>
+      </header>
+      <dl>
+        <div class="row"><dt>experience</dt><dd>4 years</dd></div>
+        <div class="row"><dt>collections efficiency</dt><dd>+15.6%</dd></div>
+        <div class="row"><dt>recommender engagement vs baseline</dt><dd>&gt;20%</dd></div>
+        <div class="row"><dt>businesses served by my models</dt><dd>1,000+</dd></div>
+        <div class="row"><dt>open-weight LLMs benchmarked</dt><dd>15</dd></div>
+      </dl>
+      <footer>location: London · education: MSc Data Science</footer>
+    </article>
+  </div>
+</header>
+
+<div class="clients">
+  <div class="wrap">
+    <span class="label">Worked with</span>
+    <ul>
+      <li>Recital</li>
+      <li>AB InBev</li>
+      <li>Izifin</li>
+      <li>Oxygen X Africa</li>
+      <li>Reevar</li>
+      <li>Zyntria Labs</li>
+    </ul>
+  </div>
+</div>
+
+<main>
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Selected work</h2>
+        <span class="label">Idea → data → model → production</span>
+      </div>
+
+      <div class="cases">
+        <article class="case">
+          <div class="meta"><span class="label">Payments</span><span class="label">2026 – now</span></div>
+          <h3>Reconciling business ledgers with bank statements</h3>
+          <p><span class="where">Recital</span> matches each business's internal ledger against its different bank statements. As a part-time consultant I build the data models and AI behind it, including a transaction categorisation model trained through a feedback loop, and auto-reconciliation.</p>
+          <span class="result">deep AI agents suggest matching rules</span>
+        </article>
+
+        <article class="case">
+          <div class="meta"><span class="label">Credit</span><span class="label">2025</span></div>
+          <h3>Credit and collections models for a lender</h3>
+          <p>Built <span class="where">Izifin</span>'s first credit-risk and affordability model using discretionary-income data, then models for <span class="where">Oxygen X Africa</span> that predict when and how to contact customers in collections.</p>
+          <span class="result">collections efficiency +15.6%</span>
+        </article>
+
+        <article class="case">
+          <div class="meta"><span class="label">Retail</span><span class="label">2024 – 2026</span></div>
+          <h3>Recommendations for a B2B ordering platform</h3>
+          <p>Built recommendation models at <span class="where">AB InBev</span> for retailers across several African markets, plus computer vision that checks brand visibility from outlet photos.</p>
+          <span class="result">engagement up 20%+ across 1,000+ businesses</span>
+        </article>
+
+        <article class="case">
+          <div class="meta"><span class="label">LLMs and agents</span><span class="label">2024 – now</span></div>
+          <h3>AI assistants that answer from evidence</h3>
+          <p>Built chat, voice and phone assistants for thought leaders at <span class="where">Reevar</span>. Each one answers from the client's own content, such as YouTube videos, PDFs, social posts and audiobooks, and cites its source. I also build AI agents at <span class="where">Zyntria Labs</span>.</p>
+          <span class="result">MSc: 15 open-weight LLMs benchmarked</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="builds">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Side projects</h2>
+      </div>
+      <div class="builds">
+        <div class="build"><h3>StarrScout</h3><p>Player tracking from phone footage of football matches.</p></div>
+        <div class="build"><h3>Safer Payments Lab</h3><p>Helps banks make quicker decisions on scam payments.</p></div>
+        <div class="build"><h3>PolyPort</h3><p>AI agents that research prediction-market events.</p></div>
+        <div class="build"><h3>RepuShield</h3><p>A 0–100 reputation score from social media.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="record">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Experience</h2>
+      </div>
+      <div class="record">
+        <div>
+          <h3>Roles</h3>
+          <ol>
+            <li><span class="t">ML Engineer, Consultant</span><span class="s">Recital · part-time</span><span class="d">Sep 2026 – present</span></li>
+            <li><span class="t">AI Engineer</span><span class="s">Zyntria Labs · part-time</span><span class="d">Nov 2024 – present</span></li>
+            <li><span class="t">Data Science Consultant</span><span class="s">Izifin · contract</span><span class="d">Aug 2025 – Jan 2026</span></li>
+            <li><span class="t">Data Scientist and AI Engineer</span><span class="s">AB InBev · contract</span><span class="d">Mar 2024 – Jan 2026</span></li>
+            <li><span class="t">AI Engineer</span><span class="s">Reevar · contract</span><span class="d">Dec 2024 – Sep 2025</span></li>
+          </ol>
+        </div>
+        <div>
+          <h3>Tools</h3>
+          <ul>
+            <li><span class="t">Data science</span><span class="s">Python, SQL, PySpark, dbt, scikit-learn, PyTorch, A/B testing</span></li>
+            <li><span class="t">ML and AI</span><span class="s">MLflow, AutoML, recommenders, RAG, LLM agents, computer vision</span></li>
+            <li><span class="t">Cloud</span><span class="s">AWS, Azure Databricks, Google Cloud, RunPod, Render</span></li>
+            <li><span class="t">Data stores</span><span class="s">PostgreSQL, MySQL, MongoDB, DynamoDB, BigQuery</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Education</h3>
+          <ul>
+            <li><span class="t">MSc Data Science</span><span class="s">York St John University, London</span><span class="d">expected Dec 2026</span></li>
+            <li><span class="t">B.Tech Civil Engineering</span><span class="s">Ladoke Akintola University of Technology</span><span class="d">2023</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Hiring a data scientist or ML engineer in London?</h2>
+      <div class="contact-row">
+        <span class="email" id="email">bayoleems@gmail.com</span>
+        <button type="button" id="copy">Copy email</button>
+        <a class="btn ghost" href="https://linkedin.com/in/saleem-adebayo" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="wrap fine">Saleem Adebayo · Data scientist and machine learning engineer · London</div>
+
+<script>
+  const swatches = document.querySelectorAll('.swatches button');
+  const setPalette = (name) => {
+    if (name === 'green') document.documentElement.removeAttribute('data-palette');
+    else document.documentElement.setAttribute('data-palette', name);
+    swatches.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.palette === name)));
+  };
+  let saved = 'green';
+  try { saved = localStorage.getItem('palette') || 'green'; } catch (e) {}
+  if (['green', 'mustard', 'mono'].includes(saved)) setPalette(saved);
+  swatches.forEach((b) => b.addEventListener('click', () => {
+    setPalette(b.dataset.palette);
+    try { localStorage.setItem('palette', b.dataset.palette); } catch (e) {}
+  }));
+
+  const btn = document.getElementById('copy');
+  btn.addEventListener('click', () => {
+    const text = document.getElementById('email').textContent;
+    const done = (msg) => { btn.textContent = msg; setTimeout(() => { btn.textContent = 'Copy email'; }, 1800); };
+    const select = () => {
+      const range = document.createRange();
+      range.selectNodeContents(document.getElementById('email'));
+      const sel = getSelection(); sel.removeAllRanges(); sel.addRange(range);
+      done('Selected, press Cmd+C');
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(() => done('Copied'), select);
+    } else { select(); }
+  });
+</script>
+</body>
+</html>
